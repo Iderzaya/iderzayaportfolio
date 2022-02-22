@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+@media all {
+    main {
+        display: block
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(https://i.pinimg.com/originals/ce/09/b3/ce09b3dc3bc1ab51293d55b610dc3f22.jpg);
+        background-repeat: repeat;
+        color: #fff;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 30px;
+    }
+    header a {
+        font-size: 25px;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    header a {
+        color: rgba(255, 255, 255, .8) !important;
+        transition: 0.3s ease-in-out;
+    }
+    .underline {
+        display: inline-block;
+        position: relative;
+    }
+    .underline::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.4s ease-out;
+    }
+    .underline:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    video {
+        background-repeat: repeat;
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    header a:hover,
+    header a:focus {
+        font-size: 27px;
+        color: #fff;
+    }
+    .nav-link {
+        background-color: rgba(0, 0, 0, .7) !important;
+        text-align: end !important;
+    }
+    .grid {
+        display: grid
+    }
+    header {
+        background-color: black;
+        padding: 30px 0 0;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 1.6vw;
+    }
+}
